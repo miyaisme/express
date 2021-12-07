@@ -1,0 +1,46 @@
+body {
+  border: solid 1px black;
+  width: 680px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 5px;
+  font-weight: 600;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  background-color: rgb(215, 215, 215);
+  cursor: pointer;
+}
+
+.btn-list > .active {
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+.btn-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.home {
+  justify-content: start;
+}
+
+.btn-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+}
+
+.content {
+  margin: 20px;
+  font-size: 0.8em;
+}

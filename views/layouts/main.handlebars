@@ -1,0 +1,33 @@
+<!-- ./views/layouts/main.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MySite</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="btn-container">
+      <button class="btn home" type="button">回到首頁</button>
+      <div class="btn-list">
+        <button class="btn about" type="button">About</button>
+        <button class="btn portfolio">Portfolio</button>
+        <button class="btn contact">Contact</button>
+      </div>
+    </div>
+  </nav>
+  <!-- partial templates will replace the part of "body" here -->
+  <div class="content">
+    {{{ body }}}
+  </div>
+
+  <script src="/jquery/jquery.js"></script>
+  <script src="/javascripts/javascripts.js"></script>
+</body>
+
+</html>
